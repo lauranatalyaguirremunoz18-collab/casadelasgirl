@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Cosméticos y Belleza - Tocaima Cundinamarca</title>
+    <!-- Redirección inmediata a html/inicio.html para respetar la estructura por carpetas -->
+    <meta http-equiv="refresh" content="0; url=html/inicio.html">
+    <script>
+        window.location.href = "html/inicio.html";
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FAF6F0;
+            font-family: 'Outfit', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #3d2f23;
+        }
+        .loader-container {
+            text-align: center;
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(212, 175, 55, 0.2);
+            border-top: 5px solid #D4AF37;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        h2 {
+            font-weight: 300;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="imagenes/logo.ico">
+</head>
+<body>
+    <div class="loader-container">
+        <div class="spinner"></div>
+        <h2>CARGANDO EXPERIENCIA DE BELLEZA...</h2>
+        <p>Si no eres redireccionado automáticamente, <a href="html/inicio.html" style="color: #D4AF37; text-decoration: none; font-weight: 600;">haz clic aquí</a>.</p>
+    </div>
+</body>
+</html>

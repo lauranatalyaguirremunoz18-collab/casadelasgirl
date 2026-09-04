@@ -1,0 +1,69 @@
+/* ==========================================
+   SISTEMA DE DISEÑO - VARIABLES DE ESTILOS
+   ========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Paleta de Colores HSL (Permite opacidades dinámicas) */
+    --primary-h: 345;
+    --primary-s: 85%;
+    --primary-l: 63%;
+    --color-primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l)); /* Rosa Cosmético / Chic */
+    --color-primary-hover: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 8%));
+    --color-primary-soft: hsla(var(--primary-h), var(--primary-s), var(--primary-l), 0.1);
+
+    --secondary-h: 41;
+    --secondary-s: 70%;
+    --secondary-l: 53%;
+    --color-secondary: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l)); /* Oro Elegante / Clima Cálido */
+    --color-secondary-hover: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) - 8%));
+    --color-secondary-soft: hsla(var(--secondary-h), var(--secondary-s), var(--secondary-l), 0.1);
+
+    --accent-h: 150;
+    --accent-s: 35%;
+    --accent-l: 40%;
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l)); /* Verde Botánico (Cuidado Capilar/Natural) */
+    --color-accent-soft: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+
+    /* Tonos Neutros Premium */
+    --color-bg: #FAF6F0;           /* Arena / Alabastro cálido, relajante para el clima de Tocaima */
+    --color-bg-card: #FFFFFF;
+    --color-text: #2C221E;         /* Marrón ultra oscuro para evitar el contraste duro del negro puro */
+    --color-text-muted: #7E6C65;   /* Grisáceo cálido para textos secundarios */
+    --color-border: #EFE9DF;
+    
+    /* Dark Mode (Variables de referencia para componentes o efectos oscuros elegantes) */
+    --color-dark-bg: #150E0C;
+    --color-dark-card: #201715;
+    --color-dark-text: #FAF6F0;
+    --color-dark-border: #2D2320;
+
+    /* Fuentes */
+    --font-title: 'Outfit', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+
+    /* Sombras y Profundidad */
+    --shadow-sm: 0 4px 10px rgba(61, 47, 35, 0.05);
+    --shadow-md: 0 10px 25px rgba(61, 47, 35, 0.08);
+    --shadow-lg: 0 20px 40px rgba(61, 47, 35, 0.12);
+    --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+    --shadow-primary: 0 10px 20px hsla(var(--primary-h), var(--primary-s), var(--primary-l), 0.25);
+    
+    /* Bordes y Efectos */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-full: 9999px;
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Ancho Máximo de Contenedor */
+    --container-width: 1200px;
+    
+    /* Efecto Glassmorphism */
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.5);
+    --glass-blur: 15px;
+}
