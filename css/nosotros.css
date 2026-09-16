@@ -346,24 +346,98 @@
 
 @media (max-width: 768px) {
     .page-banner {
-        height: 25vh;
+        height: 20vh;
+        min-height: 150px;
     }
     
     .page-banner h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .page-banner p {
+        font-size: 0.88rem;
+        padding: 0 16px;
     }
 
     .contact-form-container {
-        padding: 30px 20px;
+        padding: 24px 16px;
     }
     
     .faq-question {
-        padding: 20px;
-        font-size: 1rem;
+        padding: 18px 16px;
+        font-size: 0.95rem;
     }
     
     .faq-answer p {
-        padding: 0 20px 20px 20px;
+        padding: 0 16px 18px 16px;
+        font-size: 0.88rem;
+    }
+
+    .history-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .history-text p {
+        font-size: 0.9rem;
+    }
+
+    .mission-quote {
+        padding: 16px 18px;
+    }
+
+    .mission-quote p {
+        font-size: 0.95rem;
+    }
+
+    .trust-card {
+        padding: 28px 20px;
+    }
+
+    .trust-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .trust-card p {
+        font-size: 0.85rem;
+    }
+
+    .contact-info h2 {
+        font-size: 1.6rem;
+    }
+
+    .method-card {
+        padding: 18px 16px;
+        gap: 14px;
+    }
+
+    .method-icon {
+        font-size: 1.8rem;
+        width: 46px;
+        height: 46px;
+        min-width: 46px;
+    }
+}
+
+@media (max-width: 400px) {
+    .page-banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .history-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .contact-info h2 {
+        font-size: 1.4rem;
+    }
+
+    .faq-question {
+        font-size: 0.88rem;
+        padding: 16px 14px;
+    }
+
+    .trust-icon {
+        font-size: 2.2rem;
     }
 }
 /* ---------------------------------------------------------------

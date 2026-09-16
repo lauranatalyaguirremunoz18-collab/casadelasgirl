@@ -510,43 +510,67 @@
 @media (max-width: 992px) {
     .products-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
     }
     
     .modal-product-grid {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 24px;
     }
     
     .modal-body {
-        padding: 30px;
+        padding: 24px;
+    }
+
+    .modal-product-title {
+        font-size: 1.4rem;
+    }
+
+    .modal-product-price {
+        font-size: 1.3rem;
     }
 }
 
 @media (max-width: 768px) {
     .page-banner {
-        height: 25vh;
+        height: 20vh;
+        min-height: 160px;
     }
     
     .page-banner h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .page-banner p {
+        font-size: 0.88rem;
+        padding: 0 16px;
     }
 
     .filter-bar {
-        padding: 16px;
+        padding: 14px;
+        gap: 16px;
+        margin-bottom: 24px;
     }
 
     .search-box input {
         padding: 12px 40px 12px 40px;
+        font-size: 0.88rem;
     }
     
     .search-icon {
-        left: 15px;
+        left: 14px;
+        font-size: 1rem;
+    }
+
+    #search-clear-btn {
+        right: 14px;
     }
 
     .category-filters {
         overflow-x: auto;
         flex-wrap: nowrap;
         padding-bottom: 8px;
+        gap: 8px;
         /* Ocultar scrollbar */
         scrollbar-width: none; /* Firefox */
         -ms-overflow-style: none;  /* IE and Edge */
@@ -558,16 +582,139 @@
 
     .filter-pill {
         flex-shrink: 0;
-        padding: 8px 16px;
+        padding: 8px 14px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+
+    .prod-info {
+        padding: 14px;
+    }
+
+    .prod-title {
+        font-size: 0.9rem;
+        height: auto;
+        -webkit-line-clamp: 2;
+    }
+
+    .prod-desc {
+        font-size: 0.8rem;
+        height: auto;
+        margin-bottom: 12px;
+    }
+
+    .prod-footer {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .prod-price {
+        font-size: 1.05rem;
+    }
+
+    .btn-add-cart {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
+
+    /* Modal responsive */
+    .product-modal {
+        max-width: 95%;
+        max-height: 85vh;
+    }
+
+    .modal-body {
+        padding: 20px 16px;
+    }
+
+    .modal-product-title {
+        font-size: 1.2rem;
+    }
+
+    .modal-product-price {
+        font-size: 1.2rem;
+        margin-bottom: 16px;
+    }
+
+    .modal-product-desc {
+        font-size: 0.88rem;
+    }
+
+    .modal-delivery-details {
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .delivery-badge {
+        font-size: 0.7rem;
+        padding: 6px 10px;
+    }
+
+    .modal-actions-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .modal-close-btn {
+        top: 12px;
+        right: 12px;
+        font-size: 1.6rem;
+    }
+
+    .btn-whatsapp-query {
+        font-size: 0.8rem;
+        padding: 12px;
+    }
+
+    .catalog-section {
+        padding: 40px 0;
     }
 }
 
 @media (max-width: 576px) {
     .products-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
     }
     
     .prod-img-container {
-        height: 320px;
+        height: 200px;
+    }
+
+    .prod-tag {
+        font-size: 0.6rem;
+        padding: 3px 8px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .quick-view-btn {
+        font-size: 0.7rem;
+        padding: 8px 14px;
     }
 }
+
+@media (max-width: 400px) {
+    .page-banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .page-banner p {
+        font-size: 0.8rem;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .prod-img-container {
+        height: 280px;
+    }
+
+    .filter-pill {
+        padding: 7px 12px;
+        font-size: 0.75rem;
+    }
+}
+

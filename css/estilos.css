@@ -754,6 +754,10 @@ button:disabled {
     .section {
         padding: 60px 0;
     }
+
+    .container {
+        padding: 0 16px;
+    }
     
     .menu-toggle {
         display: flex;
@@ -761,25 +765,31 @@ button:disabled {
         z-index: 10002;
     }
 
+    .nav-container {
+        height: 65px;
+    }
+
     .nav-menu {
         position: fixed;
-        top: 80px;
+        top: 65px;
         left: 0;
         width: 100%;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 65px);
         background-color: var(--glass-bg);
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 32px;
+        gap: 24px;
         transform: translateY(-100%);
         opacity: 0;
         transition: transform 0.35s ease, opacity 0.3s ease;
         pointer-events: none;
         border-top: 1px solid var(--color-border);
         z-index: 10001;
+        overflow-y: auto;
+        padding: 20px 0;
     }
 
     .nav-menu.active {
@@ -789,8 +799,10 @@ button:disabled {
     }
 
     .nav-link {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         pointer-events: auto;
+        white-space: nowrap;
+        padding: 10px 16px;
     }
 
     /* Fallback para dispositivos sin soporte de backdrop-filter o transparencia reducida */
@@ -812,11 +824,88 @@ button:disabled {
 
     .footer-grid {
         grid-template-columns: 1fr;
+        gap: 32px;
     }
 
     .footer-bottom {
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
         text-align: center;
     }
+
+    .footer {
+        padding: 50px 0 24px 0;
+    }
+
+    .footer-brand p {
+        max-width: 100%;
+    }
+
+    /* Carrito sidebar responsive */
+    .cart-sidebar {
+        width: 100%;
+    }
+
+    /* Toast repositioning */
+    .toast-container {
+        bottom: 16px;
+        right: 16px;
+        left: 16px;
+    }
+
+    .toast {
+        min-width: auto;
+        width: 100%;
+        font-size: 0.85rem;
+        padding: 12px 16px;
+    }
+
+    /* Botones más compactos en móvil */
+    .btn {
+        padding: 12px 22px;
+        font-size: 0.88rem;
+    }
 }
+
+/* Pantallas muy pequeñas (teléfonos compactos) */
+@media (max-width: 400px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    .btn {
+        padding: 10px 18px;
+        font-size: 0.82rem;
+    }
+
+    .footer-heading {
+        font-size: 1rem;
+    }
+
+    .footer-links a,
+    .footer-contact li {
+        font-size: 0.85rem;
+    }
+
+    .cart-sidebar-header {
+        padding: 16px;
+    }
+
+    .cart-sidebar-body {
+        padding: 16px;
+    }
+
+    .cart-sidebar-footer {
+        padding: 16px;
+    }
+}
+

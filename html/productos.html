@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Productos | Boutique La Casa de las Girls Tocaima</title>
     <!-- Meta tags SEO -->
-    <meta name="description" content="Navega por nuestro catálogo de cosméticos de alta duración, tratamientos capilares orgánicos, cuidado corporal y ropa_shein en Tocaima. Compra por WhatsApp.">
+    <meta name="description"
+        content="Navega por nuestro catálogo de cosméticos de alta duración, tratamientos capilares orgánicos, cuidado corporal y ropa Shein en Tocaima. Compra por WhatsApp.">
     <!-- Hojas de Estilo -->
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/productos.css">
@@ -13,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="../imagenes/logo.ico">
 </head>
+
 <body>
     <!-- Skip Link para Accesibilidad por Teclado -->
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
@@ -23,8 +26,10 @@
     <header class="header-container">
         <nav class="navbar">
             <div class="container nav-container">
-                <a href="inicio.html" class="logo" id="logo-main"><img src="../imagenes/logo.png" alt="Logo La Casa de las Girls" class="logo-img" style="height:70px; width:auto; border-radius:50%; object-fit:contain; vertical-align:middle; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"/></a>
-                
+                <a href="inicio.html" class="logo" id="logo-main"><img src="../imagenes/logo.png"
+                        alt="Logo La Casa de las Girls" class="logo-img"
+                        style="height:70px; width:auto; border-radius:50%; object-fit:contain; vertical-align:middle; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" /></a>
+
                 <ul class="nav-menu">
                     <li><a href="inicio.html" class="nav-link" id="lnk-inicio">Inicio</a></li>
                     <li><a href="productos.html" class="nav-link active" id="lnk-productos">Productos</a></li>
@@ -53,63 +58,70 @@
 
     <main id="main-content">
 
-    <!-- Banner Superior de la Página -->
-    <section class="page-banner">
-        <div class="banner-overlay"></div>
-        <div class="container banner-content animar-scroll">
-            <h1>Nuestros Productos</h1>
-            <p>Cosméticos, cuidado capilar premium, cuidado_personal y ropa_shein importada. Todo en un solo lugar.</p>
-        </div>
-    </section>
-
-    <!-- Sección de Catálogo Principal -->
-    <section class="section catalog-section">
-        <div class="container">
-            
-            <!-- Barra de Filtros y Búsqueda -->
-            <div class="filter-bar animar-scroll">
-                <!-- Buscador de Texto -->
-                <div class="search-box">
-                    <span class="search-icon">🔍</span>
-                    <input type="text" id="search-input" placeholder="Buscar productos... (ej. Shampoo, Labial, Vestido)">
-                    <button id="search-clear-btn" style="display: none;">&times;</button>
-                </div>
-                
-                <!-- Filtros por Categorías -->
-                <div class="category-filters" id="category-filters-container">
-                    <button class="filter-pill active" data-filter="all">Todos</button>
-                    <button class="filter-pill" data-filter="cosmeticos">Cosméticos</button>
-                    <button class="filter-pill" data-filter="capilares">Capilares</button>
-                    <button class="filter-pill" data-filter="personal">cuidado_personal</button>
-                    <button class="filter-pill" data-filter="shein">ropa_shein</button>
-                    <button class="filter-pill" data-filter="kids">Kids</button>
-                </div>
+        <!-- Banner Superior de la Página -->
+        <section class="page-banner">
+            <div class="banner-overlay"></div>
+            <div class="container banner-content animar-scroll">
+                <h1>Nuestros Productos</h1>
+                <p>Cosméticos, cuidado capilar premium, cuidado personal y ropa Shein importada. Todo en un solo lugar.
+                </p>
             </div>
+        </section>
 
-            <!-- Grilla Dinámica de Productos -->
-            <div class="catalog-grid-container">
-                <!-- Cargador de espera (Skeleton loader / Spinner) -->
-                <div id="catalog-loader" class="text-center" style="grid-column: 1 / -1; padding: 50px 0;">
-                    <div class="spinner" style="width: 40px; height: 40px; border: 4px solid rgba(212, 175, 55, 0.2); border-top: 4px solid #D4AF37; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 15px auto;"></div>
-                    <p style="color: var(--color-text-muted);">Cargando catálogo premium...</p>
-                </div>
-                
-                <!-- Grilla de productos real -->
-                <div class="products-grid" id="products-grid" style="display: none;">
-                    <!-- Se rellena con JS -->
+        <!-- Sección de Catálogo Principal -->
+        <section class="section catalog-section">
+            <div class="container">
+
+                <!-- Barra de Filtros y Búsqueda -->
+                <div class="filter-bar animar-scroll">
+                    <!-- Buscador de Texto -->
+                    <div class="search-box">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" id="search-input"
+                            placeholder="Buscar productos... (ej. Shampoo, Labial, Vestido)">
+                        <button id="search-clear-btn" style="display: none;">&times;</button>
+                    </div>
+
+                    <!-- Filtros por Categorías -->
+                    <div class="category-filters" id="category-filters-container">
+                        <button class="filter-pill active" data-filter="all">Todos</button>
+                        <button class="filter-pill" data-filter="cosmeticos">Cosméticos</button>
+                        <button class="filter-pill" data-filter="capilares">Capilares</button>
+                        <button class="filter-pill" data-filter="personal">Cuidado Personal</button>
+                        <button class="filter-pill" data-filter="shein">Ropa Shein</button>
+                        <button class="filter-pill" data-filter="kids">Kids</button>
+                    </div>
                 </div>
 
-                <!-- Mensaje de No Resultados -->
-                <div id="no-results" class="no-results text-center" style="display: none; grid-column: 1 / -1; padding: 80px 20px;">
-                    <p style="font-size: 2.5rem; margin-bottom: 15px;">🏜️</p>
-                    <h3>No encontramos productos que coincidan</h3>
-                    <p style="color: var(--color-text-muted); margin-top: 8px;">Intenta cambiar los términos de búsqueda o selecciona otra categoría.</p>
-                    <button id="reset-filters-btn" class="btn btn-primary" style="margin-top: 20px; padding: 10px 20px; font-size: 0.85rem;">Restaurar Filtros</button>
+                <!-- Grilla Dinámica de Productos -->
+                <div class="catalog-grid-container">
+                    <!-- Cargador de espera (Skeleton loader / Spinner) -->
+                    <div id="catalog-loader" class="text-center" style="grid-column: 1 / -1; padding: 50px 0;">
+                        <div class="spinner"
+                            style="width: 40px; height: 40px; border: 4px solid rgba(212, 175, 55, 0.2); border-top: 4px solid #D4AF37; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 15px auto;">
+                        </div>
+                        <p style="color: var(--color-text-muted);">Cargando catálogo premium...</p>
+                    </div>
+
+                    <!-- Grilla de productos real -->
+                    <div class="products-grid" id="products-grid" style="display: none;">
+                        <!-- Se rellena con JS -->
+                    </div>
+
+                    <!-- Mensaje de No Resultados -->
+                    <div id="no-results" class="no-results text-center"
+                        style="display: none; grid-column: 1 / -1; padding: 80px 20px;">
+                        <p style="font-size: 2.5rem; margin-bottom: 15px;">🏜️</p>
+                        <h3>No encontramos productos que coincidan</h3>
+                        <p style="color: var(--color-text-muted); margin-top: 8px;">Intenta cambiar los términos de
+                            búsqueda o selecciona otra categoría.</p>
+                        <button id="reset-filters-btn" class="btn btn-primary"
+                            style="margin-top: 20px; padding: 10px 20px; font-size: 0.85rem;">Restaurar Filtros</button>
+                    </div>
                 </div>
+
             </div>
-
-        </div>
-    </section>
+        </section>
     </main>
 
     <!-- Modal de Vista Rápida (Quick View) -->
@@ -133,7 +145,8 @@
             <div id="cart-empty-message" class="text-center" style="padding: 40px 20px;">
                 <p style="font-size: 1.5rem; margin-bottom: 15px;">🏜️</p>
                 <p style="font-weight: 500; color: var(--color-text-muted);">Tu carrito de compras está vacío.</p>
-                <button class="btn btn-primary" style="margin-top: 20px; padding: 10px 20px; font-size: 0.85rem;" id="btn-cart-empty-close">Seguir Comprando</button>
+                <button class="btn btn-primary" style="margin-top: 20px; padding: 10px 20px; font-size: 0.85rem;"
+                    id="btn-cart-empty-close">Seguir Comprando</button>
             </div>
             <!-- Lista de items agregados -->
             <div id="cart-items-container"></div>
@@ -142,10 +155,12 @@
         <div class="cart-sidebar-footer" id="cart-footer-details" style="display: none;">
             <div class="cart-subtotal-container">
                 <span>Subtotal:</span>
-                <span id="cart-subtotal" style="font-weight: 700; color: var(--color-primary); font-size: 1.2rem;">$0</span>
+                <span id="cart-subtotal"
+                    style="font-weight: 700; color: var(--color-primary); font-size: 1.2rem;">$0</span>
             </div>
-            
-            <button onclick="enviarPedidoWhatsApp()" class="btn btn-primary" style="width: 100%; gap: 10px;" id="cart-checkout-btn">
+
+            <button onclick="enviarPedidoWhatsApp()" class="btn btn-primary" style="width: 100%; gap: 10px;"
+                id="cart-checkout-btn">
                 Confirmar por WhatsApp 📱
             </button>
         </div>
@@ -157,9 +172,11 @@
             <!-- Columna 1: Branding -->
             <div class="footer-brand">
                 <a href="inicio.html" class="logo" style="margin-bottom: 20px;">
-                    <img src="../imagenes/logo.png" alt="Logo La Casa de las Girls" style="height:70px; width:auto; border-radius:50%; object-fit:contain; vertical-align:middle; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"/>
+                    <img src="../imagenes/logo.png" alt="Logo La Casa de las Girls"
+                        style="height:70px; width:auto; border-radius:50%; object-fit:contain; vertical-align:middle; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
                 </a>
-                <p>Ofrecemos lo mejor en cosmética, salud capilar y moda en Tocaima, Cundinamarca. Realzando tu bienestar físico y estilo con productos 100% garantizados.</p>
+                <p>Ofrecemos lo mejor en cosmética, salud capilar y moda en Tocaima, Cundinamarca. Realzando tu
+                    bienestar físico y estilo con productos 100% garantizados.</p>
             </div>
 
             <!-- Columna 2: Enlaces Rápidos -->
@@ -179,8 +196,8 @@
                 <ul class="footer-links">
                     <li><a href="productos.html?categoria=cosmeticos">Maquillaje Premium</a></li>
                     <li><a href="productos.html?categoria=capilares">Tratamientos Capilares</a></li>
-                    <li><a href="productos.html?categoria=personal">cuidado_personal</a></li>
-                    <li><a href="productos.html?categoria=shein">ropa_shein Importada</a></li>
+                    <li><a href="productos.html?categoria=personal">Cuidado Personal</a></li>
+                    <li><a href="productos.html?categoria=shein">Ropa Shein Importada</a></li>
                 </ul>
             </div>
 
@@ -216,8 +233,5 @@
     <script src="../js/main.js"></script>
     <script src="../js/productos-catalogo.js"></script>
 </body>
+
 </html>
-
-
-
-
