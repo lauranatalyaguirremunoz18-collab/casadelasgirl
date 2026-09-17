@@ -158,13 +158,13 @@ function renderCarrito() {
                     <h4 class="cart-item-title">${item.nombre}</h4>
                     <span class="cart-item-price">${formatearPrecio(item.precio)}</span>
                     <div class="cart-item-qty">
-                        <button onclick="cambiarCantidadUI('${item.id}', -1)" class="qty-btn"><i class="fas fa-minus">-</i></button>
+                        <button onclick="cambiarCantidadUI('${item.id}', -1)" class="qty-btn"><i class="fas fa-minus"></i></button>
                         <span class="qty-number">${item.cantidad}</span>
-                        <button onclick="cambiarCantidadUI('${item.id}', 1)" class="qty-btn"><i class="fas fa-plus">+</i></button>
+                        <button onclick="cambiarCantidadUI('${item.id}', 1)" class="qty-btn"><i class="fas fa-plus"></i></button>
                     </div>
                 </div>
                 <button onclick="eliminarDelCarrito('${item.id}')" class="cart-item-remove">
-                    <i class="fas fa-trash-alt">&times;</i>
+                    <i class="fas fa-trash-alt"></i>
                 </button>
             </div>
         `;
